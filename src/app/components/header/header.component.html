@@ -1,11 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light animated fadeIn">
   <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="120px" alt=""></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button (click)="toggleCollapse()" class="navbar-toggler" type="button" >
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse animated fadeIn Fast" id="navbarSupportedContent" [ngStyle]="{display: toggle == true ? 'block' : 'none'}"  >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item " routerLinkActive="active" >
         <a class="nav-link" [routerLink]="['/home']" >Inicio</a>

@@ -40,14 +40,16 @@ footer{
 
 }
 #alert{
-  width: 35%;
+  width: 350px;
 }
 .card-alert{
   display: flex;
   justify-content: center;
 }
 .card-user{
-  width: 50%;
+  min-width: 350px;
+  width: 350px;
+
   box-shadow: 0px 4px 8px -4px rgba(0,0,0,0.75);
 }
 #x-icon,#check-icon,#alert{
@@ -124,3 +126,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
+
+

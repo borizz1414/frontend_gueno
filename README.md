@@ -17,3 +17,5 @@ Proceso #2 /////////////////////////
 1) Mediante el cmd ng serve, levanto un servidor local para realizar pruebas y comprobar la funcionalidad
 2) Mediante el cmd ng build --prod, se me crean los archivos necesarios de produccion para hacer el deploy.
 2) Deploy del backend en GitHub.
+
+URL: https://borizz1414.github.io/frontend_gueno/

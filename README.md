@@ -1,27 +1,19 @@
-# MyApp
+/////////////////////////////////////////////////////
+Test de empleo - Gueno Challenge (FRONTEND)
+Desarrollador: Boris Lopez - www.borisdev.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+DESARROLLO: 
+Proceso #1 //////////////////////////
+1) Crear la carpeta del proyecto
+2) Mediante el cmd ng new genero un nuevo proyecto de Angular, una vez instalada el @Angular/cli con npm.
+3) Creo una carpeta que llamada components que tendran los componentes que manipularan datos y tendran interactividad en el diseño.
+4) Creo una caperta llamada services que tendra los servicios que consumiran mediante peticiones http el backend creado anteriormente.
+5) Creo una carpeta llamada models que tendran  unos modelos para luego instanciarlos y que me serviran como tipos de datos de variables.
+6) Creo un archivo llamado app.routing que tendran las rutas que representan componentes  y asi poder navegar sin recargar la pagina.
+6) Mediante el cmd npm install jquery --save, instalo los paquetes de jquery para animaciones y detalles.
+//////////////////////////
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Proceso #2 /////////////////////////
+1) Mediante el cmd ng serve, levanto un servidor local para realizar pruebas y comprobar la funcionalidad
+2) Mediante el cmd ng build --prod, se me crean los archivos necesarios de produccion para hacer el deploy.
+2) Deploy del backend en GitHub.

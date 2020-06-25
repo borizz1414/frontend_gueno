@@ -1,0 +1,9 @@
+[0523/125013.034:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[0525/113759.428:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0525/113759.809:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0525/113759.852:ERROR:exception_snapshot_win.cc(98)] thread ID 5172 not found in process
+[0525/113759.852:ERROR:exception_snapshot_win.cc(98)] thread ID 9692 not found in process
+[0525/113759.881:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0525/113759.881:ERROR:exception_snapshot_win.cc(98)] thread ID 11348 not found in process
+[0525/113800.117:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0525/113800.117:ERROR:exception_snapshot_win.cc(98)] thread ID 9348 not found in process

@@ -8,7 +8,7 @@ import { BodyComponent } from './components/body/body.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: BodyComponent },
-  { path: 'sobre-mi', component: AboutComponent },
+  { path: 'descripcion', component: AboutComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 

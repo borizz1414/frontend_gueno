@@ -7,7 +7,7 @@
 <div class="col d-flex  justify-content-center mt-3">
 <form  #formDni="ngForm" id="form-dni" (ngSubmit)="OnSubmit(formDni)">
 
-  <label for="dni" id="label-input" ><i class="fas fa-times mr-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }" id="x-icon"></i><i class="fas fa-check mr-2" id="check-icon" [ngStyle]="{'color':'#44bb47'}" ></i><input type="number" min="0" id="input_dni" class="form-control" name="dni"  #cuit="ngModel" [(ngModel)]='id'  placeholder="Introduzca su DNI" required></label>
+  <label for="dni" id="label-input" ><i class="fas fa-times mr-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }" id="x-icon"></i><i class="fas fa-check mr-2" id="check-icon" [ngStyle]="{'color':'#44bb47'}" ></i><input type="number" min="0" id="input_dni" class="form-control" name="dni"  #cuit="ngModel" [(ngModel)]='id'  placeholder="ID" required></label>
 <input type="submit" value="Buscar" class="btn btn-primary" [disabled]="!formDni.form.valid">
 </form>
 </div>

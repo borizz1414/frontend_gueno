@@ -24,7 +24,7 @@ export class BodyComponent {
 
   OnSubmit(form) {
       this.load = true;
-    setTimeout(() => {
+
 
       console.log(this.dni.cuit);
       this._dni.getCuit(this.id).subscribe(
@@ -37,6 +37,7 @@ export class BodyComponent {
                 $('#check-icon').fadeIn();
                 $('#input_dni').css('border', '2px solid #28a745');
                 $('#input_dni').css('box-shadow', '0px 4px 8px -4px #28a745');
+                this.load = false;
               this.user.name = res.name;
               this.user.surname = res.surname;
               this.user.birthday = res.birthday;
@@ -45,7 +46,7 @@ export class BodyComponent {
               this.user.cuit = this.dni.cuit
 
               this.status = true;
-              this.load = false;
+
 
               console.log(this.user);
             },
@@ -65,7 +66,7 @@ export class BodyComponent {
           this.status = false;
         }
       );
-    }, 700);
+
 
   }
 }

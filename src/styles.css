@@ -55,6 +55,9 @@ footer{
 #x-icon,#check-icon,#alert{
    display: none;
 }
+.lead{
+  text-align:justify;
+}
 #input_dni{
       width: 300px;
     border-radius: 20px;

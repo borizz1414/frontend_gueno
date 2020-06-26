@@ -65,7 +65,7 @@ export class BodyComponent {
           this.status = false;
         }
       );
-    }, 1000);
+    }, 700);
 
   }
 }

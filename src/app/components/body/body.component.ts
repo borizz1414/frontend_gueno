@@ -35,8 +35,8 @@ export class BodyComponent {
                 $('#x-icon').hide();
                 $('#alert').hide();
                 $('#check-icon').fadeIn();
-                $('#input_dni').css('border', '2px solid #28a745');
-                $('#input_dni').css('box-shadow', '0px 4px 8px -4px #28a745');
+
+
                 this.load = false;
               this.user.name = res.name;
               this.user.surname = res.surname;
@@ -61,8 +61,8 @@ export class BodyComponent {
           $('#check-icon').hide();
              $('#x-icon').fadeIn()
              $('#alert').fadeIn()
-             $('#input_dni').css('border', '2px solid #e45454');
-             $('#input_dni').css('box-shadow', '0px 4px 8px -3px rgba(255, 66, 66, 0.75)');
+
+
           this.status = false;
         }
       );

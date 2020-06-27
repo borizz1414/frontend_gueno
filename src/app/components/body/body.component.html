@@ -1,23 +1,18 @@
 <div class="container-fluid content-body">
 
 <div class="row">
-  <div class="col-sm-12 col-md-12 animated fadeIn Fast">
-    <div class="col d-flex  justify-content-center">
-      <h2 [ngStyle]="{color: 'white'}">Ingresar DNI <i class="far fa-address-card"></i></h2>
+  <div class="col-sm-3 col-md-3"></div>
+  <div class="col-sm-6 col-md-6 animated fadeIn Fast card-dni">
+    <div class="card-body-dni">
+         <div class="col d-flex  justify-content-center">
+      <h2 [ngStyle]="{color: 'black'}">Ingresar DNI <i class="far fa-address-card"></i></h2>
     </div>
 <div class="col d-flex  justify-content-center mt-3">
 <form  #formDni="ngForm" id="form-dni" (ngSubmit)="OnSubmit(formDni)">
 
   <label for="dni" id="label-input" ><i class="fas fa-times mr-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }" id="x-icon"></i><i class="fas fa-check mr-2" id="check-icon" [ngStyle]="{'color':'#44bb47'}" ></i><input type="number" min="0" id="input_dni" class="form-control" name="dni"  #cuit="ngModel" [(ngModel)]='id'  placeholder="ID" required></label>
-<input type="submit" value="Buscar" class="btn btn-success" [disabled]="!formDni.form.valid">
+<input type="submit" value="Buscar" class="btn btn-raised btn-success" [disabled]="!formDni.form.valid">
 </form>
-</div>
-
-  </div>
-
-
-</div>
-
 </div>
 <div class="load animated fadeIn" *ngIf="load">
   <div class="lds-dual-ring"></div>
@@ -26,18 +21,21 @@
 <!-- Card -->
 
 <div class="card-alert mt-3 mb-5">
-<div class="card weather-card animated fadeIn card-user" *ngIf="status">
+  <div class="card weather-card animated fadeIn card-user" *ngIf="status">
 
-  <!-- Card content -->
-  <div class="card-body pb-3">
+    <!-- Card content -->
+    <div class="card-body pb-3">
 
-    <!-- Title -->
+      <!-- Title -->
 
-   <h4 class="card-title font-weight-bold">{{user.name}} {{ user.surname}}</h4>
-    <!-- Text -->
-    <p class="card-text "><i class="font-weight-bold">Birthday:</i> {{user.birthday | date:'dd'}} <span>de</span> {{user.birthday | date:'LLLL'}} <span>de</span> {{user.birthday | date:'y'}}</p>
-    <p class="card-text "><i class="font-weight-bold">Confidence:</i> {{user.confidence}}
-    <p class="card-text "><i class="font-weight-bold">Scoring: </i> <span *ngIf="user.approved">Approved<i class="fas fa-check ml-2" [ngStyle]="{'color':'#44bb47'}"></i></span> <span *ngIf="!user.approved">Denied<i class="fas fa-times ml-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }"></i></span>
+      <h4 class="card-title font-weight-bold">{{user.name}} {{ user.surname}}</h4>
+      <!-- Text -->
+      <p class="card-text "><i class="font-weight-bold">Birthday:</i> {{user.birthday | date:'dd'}} <span>de</span>
+        {{user.birthday | date:'LLLL'}} <span>de</span> {{user.birthday | date:'y'}}</p>
+      <p class="card-text "><i class="font-weight-bold">Confidence:</i> {{user.confidence}}
+      <p class="card-text "><i class="font-weight-bold">Scoring: </i> <span *ngIf="user.approved">Approved<i
+            class="fas fa-check ml-2" [ngStyle]="{'color':'#44bb47'}"></i></span> <span *ngIf="!user.approved">Denied<i
+            class="fas fa-times ml-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }"></i></span>
       <p class="card-text "><i class="font-weight-bold">Cuit:</i> {{user.cuit}}
 
 
@@ -47,15 +45,20 @@
 
 
 
+    </div>
+
   </div>
+  <!-- Card -->
 
-</div>
-<!-- Card -->
-
-<div class="alert alert-danger" role="alert" id="alert">
-  No existe ningun usuario con ese (ID) <i class="fas fa-users-slash"></i>
-</div>
+  <div class="alert alert-danger" role="alert" id="alert">
+    No existe ningun usuario con ese (ID) <i class="fas fa-users-slash"></i>
+  </div>
 </div>
 
+  </div>
+</div>
+  <div class="col-sm-3 col-md-3"></div>
+</div>
 
+</div>
 

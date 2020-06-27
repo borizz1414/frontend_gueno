@@ -21,10 +21,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/Poppins-Regular.ttf"
             ],
             "styles": [
               "src/styles.css",
+
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.js",

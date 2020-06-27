@@ -1,26 +1,28 @@
-<div class="container-fluid">
+<div class="container-fluid content-body">
+
 <div class="row">
   <div class="col-sm-12 col-md-12 animated fadeIn Fast">
     <div class="col d-flex  justify-content-center">
-      <h2>Ingresar DNI <i class="far fa-address-card"></i></h2>
+      <h2 [ngStyle]="{color: 'white'}">Ingresar DNI <i class="far fa-address-card"></i></h2>
     </div>
 <div class="col d-flex  justify-content-center mt-3">
 <form  #formDni="ngForm" id="form-dni" (ngSubmit)="OnSubmit(formDni)">
 
   <label for="dni" id="label-input" ><i class="fas fa-times mr-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }" id="x-icon"></i><i class="fas fa-check mr-2" id="check-icon" [ngStyle]="{'color':'#44bb47'}" ></i><input type="number" min="0" id="input_dni" class="form-control" name="dni"  #cuit="ngModel" [(ngModel)]='id'  placeholder="ID" required></label>
-<input type="submit" value="Buscar" class="btn btn-primary" [disabled]="!formDni.form.valid">
+<input type="submit" value="Buscar" class="btn btn-success" [disabled]="!formDni.form.valid">
 </form>
 </div>
-<div class="load animated fadeIn" *ngIf="load">
-  <div class="lds-dual-ring"></div>
-  <b>Buscando...</b>
-</div>
+
   </div>
 
 
 </div>
 
-
+</div>
+<div class="load animated fadeIn" *ngIf="load">
+  <div class="lds-dual-ring"></div>
+  <b>Buscando...</b>
+</div>
 <!-- Card -->
 
 <div class="card-alert mt-3 mb-5">
@@ -55,5 +57,5 @@
 </div>
 </div>
 
-</div>
+
 

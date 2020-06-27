@@ -1,16 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light animated fadeIn">
   <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="120px" alt=""></a>
-  <button (click)="toggleCollapse()" class="navbar-toggler" type="button" >
-    <span class="navbar-toggler-icon"></span>
+  <button (click)="toggleCollapse()" class="navbar-toggler" type="button" [ngStyle]="{border: '1px solid #3F51B5'}" >
+    <i [ngStyle]="{color: 'white'}" class="fas fa-bars"></i>
   </button>
 
   <div class="collapse navbar-collapse animated fadeIn Fast" id="navbarSupportedContent" [ngStyle]="{display: toggle == true ? 'block' : 'none'}"  >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item " routerLinkActive="active" >
-        <a class="nav-link" [routerLink]="['/home']" >Inicio</a>
+        <a class="nav-link" [ngStyle]="{color: 'white'}" [routerLink]="['/home']" >Inicio</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link"  [routerLink]="['/descripcion']">Descripción</a>
+        <a class="nav-link" [ngStyle]="{color: 'white'}" [routerLink]="['/descripcion']">Descripción</a>
       </li>
 
     </ul>

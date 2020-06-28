@@ -5,14 +5,14 @@ position: relative;
 
 }
 body{
-  font-family:  'Raleway';
+  font-family:  'Muli-VariableFont_wght';
 background: #f5f5f5;
 padding: 0;
 
 }
 @font-face {
-  font-family: 'Raleway';
-  src: url('assets/Raleway-Regular.ttf');
+  font-family: 'Muli-VariableFont_wght';
+  src: url('assets/Muli-VariableFont_wght.ttf');
 
 }
 footer{

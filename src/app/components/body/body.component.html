@@ -30,13 +30,13 @@
 
       <h4 class="card-title font-weight-bold">{{user.name}} {{ user.surname}}</h4>
       <!-- Text -->
-      <p class="card-text "><i class="font-weight-bold">Birthday:</i> {{user.birthday | date:'dd'}} <span>de</span>
+      <p class="card-text "><b>Birthday:</b> {{user.birthday | date:'dd'}} <span>de</span>
         {{user.birthday | date:'LLLL'}} <span>de</span> {{user.birthday | date:'y'}}</p>
-      <p class="card-text "><i class="font-weight-bold">Confidence:</i> {{user.confidence}}
-      <p class="card-text "><i class="font-weight-bold">Scoring: </i> <span *ngIf="user.approved">Approved<i
+      <p class="card-text "><b>Confidence:</b> {{user.confidence}}
+      <p class="card-text "><b>Scoring: </b> <span *ngIf="user.approved">Approved<i
             class="fas fa-check ml-2" [ngStyle]="{'color':'#44bb47'}"></i></span> <span *ngIf="!user.approved">Denied<i
             class="fas fa-times ml-2" [ngStyle]="{'color': 'rgb(247, 93, 100)' }"></i></span>
-      <p class="card-text "><i class="font-weight-bold">Cuit:</i> {{user.cuit}}
+      <p class="card-text "><b>Cuit:</b> {{user.cuit}}
 
 
 
